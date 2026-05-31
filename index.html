@@ -181,6 +181,151 @@
             .mobile-menu-btn { display: block; }
         }
     </style>
+<!--
+  WigglyWorld structured data (JSON-LD).
+  Paste ALL of this inside the <head> of your homepage (and keep it sitewide).
+  This is the single most important change for both Google rich results
+  and AI search engines (ChatGPT, Gemini, Perplexity) — it tells them
+  your prices, hours, location, FAQs and ratings in machine-readable form.
+  Validate after pasting at: https://search.google.com/test/rich-results
+-->
+
+<!-- 1. LocalBusiness / amusement center -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AmusementPark",
+  "name": "WigglyWorld",
+  "alternateName": "WigglyWorld Indore",
+  "description": "Indore's top-rated kids indoor play zone. Soft play, ball pool, trampoline, sand park, pretend play and birthday party venue for children aged 1-10.",
+  "url": "https://wigglyworld.in/",
+  "telephone": "+91-91792-10010",
+  "image": "https://wigglyworld.in/WigglyWorld_final.jpg",
+  "priceRange": "₹300-₹350 per hour",
+  "currenciesAccepted": "INR",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2334, Sudama Nagar Main Rd, beside Yashlok Hospital, Sector E, Sudama Nagar",
+    "addressLocality": "Indore",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "452009",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 22.695209,
+    "longitude": 75.836104
+  },
+  "hasMap": "https://maps.google.com/?q=WigglyWorld+Indore",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "13:30",
+    "closes": "22:00"
+  }],
+  "sameAs": [
+    "https://instagram.com/wigglyworldindore",
+    "https://www.facebook.com/p/wwworld-61552556266297/"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "1250"
+  },
+  "areaServed": [
+    "Sudama Nagar","Gumasta Nagar","Annapurna Road","Rajendra Nagar",
+    "Manik Bagh","Bijalpur","Scheme 103","Footi Kothi","Indore"
+  ]
+}
+</script>
+
+<!-- 2. Pricing / offers -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "WigglyWorld Play Pass",
+  "description": "Entry pass to WigglyWorld indoor play zone for kids up to 10 years. Includes all six play zones.",
+  "brand": { "@type": "Brand", "name": "WigglyWorld" },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Weekday Pass (Mon-Fri)",
+      "price": "300",
+      "priceCurrency": "INR",
+      "description": "₹300 per hour, +₹100 per extra 30 minutes",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "Weekend & Holiday Pass (Sat, Sun, Holidays)",
+      "price": "350",
+      "priceCurrency": "INR",
+      "description": "₹350 per hour, +₹100 per extra 30 minutes",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+</script>
+
+<!-- 3. FAQ (these answers can be lifted directly into Google AI Overviews & ChatGPT/Gemini answers) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are WigglyWorld's charges / ticket prices in Indore?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WigglyWorld charges ₹300 per hour on weekdays (Mon-Fri) and ₹350 per hour on weekends and holidays (Sat, Sun). Each additional 30 minutes is ₹100. Pricing is for kids up to 10 years, and you get a ₹100 discount coupon for your next visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are WigglyWorld's opening and closing times?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WigglyWorld is open every day, including weekends and public holidays, from 1:30 PM to 10:00 PM."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does WigglyWorld have a membership plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every visit includes a ₹100 discount coupon for your next visit. Contact WigglyWorld on WhatsApp at +91 91792 10010 for current membership and multi-visit package options."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is WigglyWorld a good kids birthday party venue in Indore?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. WigglyWorld offers customized themes and free decorations, allows outside food, and staff handle all serving and setup. Birthday kids and guests get dedicated playtime across slides, trampolines, ball pools and adventure zones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best age for WigglyWorld?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WigglyWorld is designed for children aged 1 to 10 years, with a dedicated toddler zone for ages 1-3 and age-appropriate spaces throughout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is WigglyWorld located in Indore?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WigglyWorld is at 2334, Sudama Nagar Main Road, beside Yashlok Hospital, opposite Lucky Bakery near Footi Kothi Square, Indore, MP 452009. It is easily reached from Annapurna Road, Rajendra Nagar, Manik Bagh, Scheme 103 and Gumasta Nagar."
+      }
+    }
+  ]
+}
+</script>
+
 </head>
 <body>
 
