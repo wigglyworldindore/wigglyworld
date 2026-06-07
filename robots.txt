@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# AI search crawlers explicitly allowed
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://wigglyworld.in/sitemap.xml
